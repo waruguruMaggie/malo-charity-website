@@ -527,6 +527,7 @@ textarea { resize: vertical; min-height: 130px; }
 @media (max-width: 880px) {
   .hero .wrap, .split, .contact-grid { grid-template-columns: 1fr; }
   .hero .wrap { text-align: left; }
+  .hero-copy .stats { flex-wrap: wrap; row-gap: 20px; column-gap: 28px; }
   .grid-3, .leaders { grid-template-columns: 1fr; }
   footer.site .wrap { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
