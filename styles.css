@@ -38,6 +38,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 img { max-width: 100%; display: block; }
@@ -49,6 +50,10 @@ a { color: inherit; text-decoration: none; }
   margin: 0 auto;
   padding: 0 32px;
 }
+
+.wrap.split, .wrap.split > *,
+.gallery-grid, .gallery-grid > *,
+.grid-3 > *, .leaders > * { min-width: 0; }
 
 h1, h2, h3, h4 {
   font-family: var(--serif);
@@ -230,6 +235,7 @@ footer.site ul { list-style: none; padding: 0; margin: 0; display: flex; flex-di
   gap: 48px;
   align-items: center;
 }
+.hero .wrap > * { min-width: 0; }
 .hero-brand {
   display: flex;
   align-items: center;
