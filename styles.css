@@ -201,14 +201,18 @@ footer.site ul { list-style: none; padding: 0; margin: 0; display: flex; flex-di
   margin-top: 18px;
 }
 .footer-social a {
-  width: 36px; height: 36px;
-  border-radius: 50%;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: 18px;
   border: 1px solid rgba(250,247,240,0.25);
-  display: flex; align-items: center; justify-content: center;
+  display: flex; align-items: center; gap: 8px;
   color: rgba(250,247,240,0.85);
-  transition: background 0.2s ease, border-color 0.2s ease;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
 }
 .footer-social a:hover { background: var(--gold); border-color: var(--gold); color: var(--ink); }
+.footer-social a span { line-height: 1; }
 
 .footer-bottom {
   max-width: var(--max);
@@ -328,6 +332,13 @@ section { padding: 72px 0; }
   border: 1px solid var(--line);
 }
 
+.belief-block {
+  max-width: 720px;
+  text-align: center;
+}
+.belief-block .lede { margin-left: auto; margin-right: auto; }
+.belief-block .btn { margin-top: 8px; }
+
 /* ---------- pictorial gallery (Home) ---------- */
 .gallery-grid {
   display: grid;
@@ -395,7 +406,7 @@ section { padding: 72px 0; }
   overflow: hidden;
 }
 .leader .photo img { width: 100%; height: 100%; object-fit: cover; }
-.leader .body { padding: 24px 24px 28px; }
+.leader .body { padding: 28px 24px 28px; }
 .leader h3 { margin-bottom: 2px; }
 .leader .role {
   display: block;
